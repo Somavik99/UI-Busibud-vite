@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
+import DetailsPage from "./Components/DeatilsPage/DetailsPage";
 import SignUpUI from "./Components/SignUpUI/SignUpUI";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <div>
         <Routes>
           <Route path="/" element={<SignUpUI />} />
+          <Route path="/details" element={<DetailsPage />} />
         </Routes>
       </div>
     </div>
