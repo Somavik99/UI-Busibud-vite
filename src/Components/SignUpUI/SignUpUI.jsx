@@ -2,13 +2,7 @@ import React, { useState } from "react";
 import "./SignUpUI.css";
 import { useNavigate } from "react-router-dom";
 const SignUpUI = () => {
-  const [SignUpVal, setSignUpVal] = useState({
-    user: "",
-    email: "",
-    Pass: "",
-    PhN: "",
-    cPass: "",
-  });
+ 
 
   const navigatePage = useNavigate();
 

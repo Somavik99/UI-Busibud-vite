@@ -20,25 +20,25 @@ const DetailsPage = () => {
       <div>
         <span>Country:</span>
         <span>
-          <input type="text" name="Count" />
+          <input type="text" name="Country" />
         </span>
       </div>
       <div>
         <span>State:</span>
         <span>
-          <input type="text" name="stat" />
+          <input type="text" name="state" />
         </span>
       </div>
       <div>
         <span>City:</span>
         <span>
-          <input type="text" name="cit" />
+          <input type="text" name="city" />
         </span>
       </div>
       <div>
         <span>Street:</span>
         <span>
-          <input type="text" name="strt" />
+          <input type="text" name="street" />
         </span>
       </div>
       <div>
