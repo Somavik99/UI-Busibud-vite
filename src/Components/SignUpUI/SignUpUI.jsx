@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./SignUpUI.css";
-
+import { useNavigate } from "react-router-dom";
 const SignUpUI = () => {
   const [SignUpVal, setSignUpVal] = useState({
     user: "",
@@ -10,6 +10,8 @@ const SignUpUI = () => {
     cPass: "",
   });
 
+  const navigatePage = useNavigate();
+
   const handleFormChange = (e) => {
     const { name, value } = e.target;
     return setSignUpVal({ ...SignUpVal, [name]: [value] });
@@ -18,6 +20,10 @@ const SignUpUI = () => {
   const formSubmit = (e) => {
     e.preventDefault();
   };
+
+const NextPage = ()=>{
+  navigatePage("/details")
+}
 
   return (
     <form onSubmit={formSubmit}>
@@ -83,7 +89,7 @@ const SignUpUI = () => {
         </span>
       </div>
       <div>
-        <button>Next</button>
+        <button onClick={NextPage}>Next</button>
       </div>
     </form>
   );
